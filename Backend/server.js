@@ -1,10 +1,18 @@
-const express = require('express');
+import express from 'express';
+import { MongoClient, ObjectId } from 'mongodb';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+import path from 'path';
+import { categories, products as initialProducts } from './data/seed.js';
+
+dotenv.config();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const { categories, products: initialProducts } = require('./data/seed');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 5000;
 
 
 app.use(cors());

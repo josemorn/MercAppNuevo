@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MercApp - Documentación</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MercApp - Sistema de Ecommerce</h1>
+    <p>Aplicación SPA con Vue 3, API propia y base de datos MongoDB</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Arquitectura de Despliegue</h2>
+      <ul>
+        <li><strong>Frontend:</strong> Vue 3 + Vite en Netlify</li>
+        <li><strong>Backend:</strong> Express + Node.js en Railway</li>
+        <li><strong>Database:</strong> MongoDB Atlas (M0 Free)</li>
+        <li><strong>HTTPS:</strong> Automático en ambas plataformas</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Enlaces Importantes</h2>
+      <ul>
+        <li><strong>Frontend (SPA):</strong> <a href="https://mercapp.netlify.app" target="_blank">https://mercapp.netlify.app</a></li>
+        <li><strong>Backend API:</strong> <a href="https://mercapp-api.up.railway.app" target="_blank">https://mercapp-api.up.railway.app</a></li>
+        <li><strong>Health Check:</strong> <a href="https://mercapp-api.up.railway.app/health" target="_blank">/health</a></li>
+        <li><strong>Repositorio GitHub:</strong> <a href="https://github.com/josemorn/MercAppNuevo" target="_blank">GitHub</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Documentación de Endpoints</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Método</th>
+            <th>Ruta</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GET</td>
+            <td>/api/products</td>
+            <td>Obtiene lista de productos</td>
+          </tr>
+          <tr>
+            <td>GET</td>
+            <td>/api/products/:id</td>
+            <td>Obtiene un producto por ID</td>
+          </tr>
+          <tr>
+            <td>POST</td>
+            <td>/api/products</td>
+            <td>Crea un nuevo producto</td>
+          </tr>
+          <tr>
+            <td>PUT</td>
+            <td>/api/products/:id</td>
+            <td>Actualiza un producto</td>
+          </tr>
+          <tr>
+            <td>DELETE</td>
+            <td>/api/products/:id</td>
+            <td>Elimina un producto</td>
+          </tr>
+          <tr>
+            <td>GET</td>
+            <td>/api/categories</td>
+            <td>Obtiene todas las categorías</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Stack Técnico</h2>
+      <ul>
+        <li><strong>Frontend:</strong> Vue 3, Vite, Vue Router</li>
+        <li><strong>Backend:</strong> Node.js, Express, MongoDB Driver</li>
+        <li><strong>Database:</strong> MongoDB Atlas (M0)</li>
+        <li><strong>Hosting:</strong> Railway (API), Netlify (Frontend)</li>
+        <li><strong>HTTPS:</strong> Automático</li>
+        <li><strong>CORS:</strong> Configurado</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ejecución Local</h2>
+      <h3>Backend</h3>
+      <pre><code>cd backend
+npm install
+npm run dev
+# Servidor en http://localhost:5000</code></pre>
+      
+      <h3>Frontend</h3>
+      <pre><code>cd frontend
+npm install
+npm run dev
+# Aplicación en http://localhost:5173</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MercApp | Universidad Politécnica Salesiana</p>
+  </footer>
+</body>
+</html>
